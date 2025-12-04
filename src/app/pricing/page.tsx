@@ -38,17 +38,6 @@ const pricingCategories = [
     ],
   },
   {
-    title: "Lashes & Brows",
-    services: [
-      { name: "Lash Lift", price: "$75" },
-      { name: "Lash Tint", price: "$35" },
-      { name: "Lash Lift + Tint", price: "$95" },
-      { name: "Brow Shaping", price: "$35" },
-      { name: "Brow Tint", price: "$25" },
-      { name: "Brow Lamination", price: "$75" },
-    ],
-  },
-  {
     title: "Waxing Services",
     services: [
       { name: "Eyebrow Wax", price: "$20" },
