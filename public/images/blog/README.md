@@ -35,3 +35,4 @@ All images should be:
 
 During development, if images are missing, the blog will display gradient placeholders.
 
+

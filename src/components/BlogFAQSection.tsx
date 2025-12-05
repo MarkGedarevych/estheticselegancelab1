@@ -62,3 +62,4 @@ export default function BlogFAQSection({ faqs, title = "Frequently Asked Questio
   );
 }
 
+

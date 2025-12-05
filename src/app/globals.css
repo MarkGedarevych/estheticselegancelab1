@@ -4,26 +4,32 @@
 /* ===== DESIGN SYSTEM TOKENS ===== */
 :root {
   /* Base / Backgrounds */
-  --color-page: #F7F3EF;
-  --color-section: #FFFDF9;
+  --color-page: #FAF6F3;
+  --color-section: #FFFBF7;
   
-  /* Primary (Brand) */
-  --color-primary: #E9D9C9;
-  --color-primary-dark: #D7C4B3;
-  --color-primary-light: #F3E5D6;
+  /* Primary (Rich Rose Gold) */
+  --color-primary: #D4A39A;
+  --color-primary-dark: #C08A80;
+  --color-primary-light: #F5E4E0;
   
-  /* Accents (Feminine) */
-  --color-accent: #F4D7D9;
-  --color-accent-soft: #FAEEF0;
+  /* Accents (Vibrant Coral Rose) */
+  --color-accent: #E89B9B;
+  --color-accent-soft: #FDF0F0;
+  --color-accent-vivid: #D97B7B;
   
-  /* Support (Soft Sage Wellness) */
-  --color-support: #CDE2DC;
-  --color-support-dark: #8CAEA9;
+  /* Support (Rich Sage Teal) */
+  --color-support: #8DBAB3;
+  --color-support-dark: #5F9E95;
+  --color-support-light: #D2E8E4;
+  
+  /* Gold (Luxury Accent) */
+  --color-gold: #C9A962;
+  --color-gold-light: #E8D9B5;
   
   /* Text */
-  --color-text-main: #3F3A3A;
-  --color-text-muted: #6F6662;
-  --color-border-subtle: #E0D7CF;
+  --color-text-main: #2D2828;
+  --color-text-muted: #5A5252;
+  --color-border-subtle: #E5DDD5;
   
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
@@ -39,8 +45,12 @@
   --color-primary-light: var(--color-primary-light);
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
+  --color-accent-vivid: var(--color-accent-vivid);
   --color-support: var(--color-support);
   --color-support-dark: var(--color-support-dark);
+  --color-support-light: var(--color-support-light);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
   --color-text-main: var(--color-text-main);
   --color-text-muted: var(--color-text-muted);
   --color-border-subtle: var(--color-border-subtle);
@@ -111,22 +121,23 @@ a {
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
-  background-color: var(--color-text-main);
-  color: var(--color-section);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-vivid) 100%);
+  color: white;
   font-family: var(--font-body);
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.025em;
   border-radius: 9999px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(217, 123, 123, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-support-dark);
+  background: linear-gradient(135deg, var(--color-accent-vivid) 0%, var(--color-accent) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(63, 58, 58, 0.15);
+  box-shadow: 0 8px 25px rgba(217, 123, 123, 0.4);
 }
 
 .btn-secondary {

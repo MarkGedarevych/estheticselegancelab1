@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/data/services";
 import { reviews } from "@/data/reviews";
 import { BUSINESS_INFO } from "@/lib/constants";
@@ -113,15 +114,15 @@ export default function HomePage() {
             {/* Image */}
             <div className="relative order-2 lg:order-1">
               <div className="absolute -inset-4 bg-gradient-to-br from-[var(--color-primary)]/50 to-[var(--color-accent)]/50 rounded-3xl transform -rotate-3" />
-              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-primary-light)] to-[var(--color-accent-soft)] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-white/50 flex items-center justify-center mb-4">
-                    <svg className="w-16 h-16 text-[var(--color-support-dark)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <p className="text-sm text-[var(--color-text-muted)]">Professional photo placeholder</p>
-                </div>
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
+                <Image
+                  src="/images/karina.png.png"
+                  alt="Karina Gedarevych - Licensed Esthetician at Esthetics Elegance Lab"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
               </div>
               {/* Decorative Badge */}
               <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg">

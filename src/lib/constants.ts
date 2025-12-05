@@ -1,3 +1,4 @@
+// Business configuration
 export const BUSINESS_INFO = {
   name: "Esthetics Elegance Lab",
   owner: "Karina Gedarevych",
@@ -18,8 +19,8 @@ export const BUSINESS_INFO = {
     sunday: "Closed"
   },
   social: {
-    instagram: "https://instagram.com/estheticselegancelab",
-    facebook: "https://facebook.com/estheticselegancelab"
+    instagram: "https://www.instagram.com/estheticselegancelab/",
+    facebook: "https://www.facebook.com/profile.php?id=61583977661924"
   }
 } as const;
 

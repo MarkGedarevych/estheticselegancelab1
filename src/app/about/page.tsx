@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { BUSINESS_INFO, SEO_DEFAULTS } from "@/lib/constants";
 import CTASection from "@/components/CTASection";
 
@@ -45,15 +46,15 @@ export default function AboutPage() {
             <div className="lg:sticky lg:top-32">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-br from-[var(--color-primary)]/40 to-[var(--color-accent)]/40 rounded-3xl transform rotate-2" />
-                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-primary-light)] to-[var(--color-accent-soft)] flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-40 h-40 mx-auto rounded-full bg-white/50 flex items-center justify-center mb-6">
-                      <svg className="w-20 h-20 text-[var(--color-support-dark)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                    <p className="text-[var(--color-text-muted)]">Professional photo of Karina</p>
-                  </div>
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
+                  <Image
+                    src="/images/karina.png.png"
+                    alt="Karina Gedarevych - Licensed Esthetician at Esthetics Elegance Lab in Roseville, CA"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
                 </div>
 
                 {/* Credentials Card */}
